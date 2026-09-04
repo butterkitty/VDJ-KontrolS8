@@ -16,8 +16,9 @@ Photos of the skin running on real S8 hardware:
 
 ## Installation
 1. Download `Traktor Kontrol S8 Screens.zip`.
-2. Extract it into your VirtualDJ `Skins` folder (e.g. `Documents/VirtualDJ/Skins/` on macOS/Windows).
-3. Select it as the skin for the S8's screens from VirtualDJ's skin settings.
+2. Copy zip file into your VirtualDJ `Skins` folder
+  - macOS: `~/Library/Application Support/VirtualDJ/Skins/`
+  - Windows: `Documents/VirtualDJ/Skins/`
 
 ## Color theme
 - Deck A / C (odd decks) are tinted trans-flag **blue** (`#5bcefa`); Deck B / D (even decks) are tinted **pink** (`#f5a9b8`).
