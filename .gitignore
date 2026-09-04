@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS junk
+Thumbs.db
