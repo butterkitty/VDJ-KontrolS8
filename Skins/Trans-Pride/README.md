@@ -20,6 +20,18 @@ Photos of the skin running on real S8 hardware:
   - macOS: `~/Library/Application Support/VirtualDJ/Skins/`
   - Windows: `Documents/VirtualDJ/Skins/`
 
+## Differences from the stock skin
+This is a reskin of Atomix Productions' stock `Traktor Kontrol S8 Screens` skin, not a from-scratch build — most of the interactive structure (FX faders, FX slot browser, sampler panels, BPM/Key/Loop pop-ups, dual-deck screen sharing, browser modes) already exists in the stock file. What actually changed:
+
+| Area | Stock skin | This skin |
+| --- | --- | --- |
+| Color Palette | Per-deck blue/red/teal/orange, dark grey UI text | Trans-flag blue/pink per deck, plus a blue → pink → white → pink per-deck panel background tint |
+| Track Ratings | Not shown anywhere | Rating digit shown in the browser list and on the loaded deck view, tinted by the track's color tag |
+| Already-played Tracks | Browser text always plain white | Dimmed to grey once a track has been played |
+| Browser & Folder Tree Rows | Flat single-color rows, only the selected row highlighted | Alternating two-tone striping on both the track list and folder tree |
+| Waveform | Single solid color | Colored by stem (vocal / instrumental / beat) when stem-separation data is available |
+| Folder Tree and Track Browser | VirtualDJ's native `<folderlist>` widget is active; a skin-colorable custom-drawn version exists in the file but is commented out | The native widget is disabled and the custom-drawn tree is used instead — the stock file itself notes the native control ignores skin colors on real S8 hardware — with one extra visible row and the new row striping |
+
 ## Color theme
 - Deck A / C (odd decks) are tinted trans-flag **blue** (`#5bcefa`); Deck B / D (even decks) are tinted **pink** (`#f5a9b8`).
 - Each deck's panel background cycles blue → pink → white → pink across decks 1–4, echoing the flag's stripe order.
@@ -65,7 +77,7 @@ Both are toggled from a hardware button and fade out after use, matching the FX 
 - Column headers (ARTIST / TITLE / BPM / KEY) show the current sort direction; while the browser is open, pressing the hardware button beneath the corresponding column sorts by it.
 - Header bar shows the current folder/list name and total file count.
 - Custom scrollbar reflecting position in a long list.
-- Custom-drawn **folder/tree browser** (separate from the track list) with up to 10 levels of visual indentation, alternating stripes, and selection highlighting — built from scratch because the stock folder-list control ignores skin colors on real S8 hardware.
+- Custom-drawn **folder/track browser** (separate from the track list) with up to 10 levels of visual indentation, alternating stripes, and selection highlighting — swapped in for the stock skin's native folder-list control, which ignores skin colors on real S8 hardware.
 
 ## Notes for mappers
 This skin's alternate views (touch FX faders, FX slot browser, sampler panels, BPM/Key/Loop pop-ups, and browser mode) are driven by custom skin variables (e.g. `s8fxtouch`, `s8fxselect`, `s8samgroup`, `s8samfx`, `s8bpmview`, `s8loopselect`, `s8browser`, `$deckview`, `screenoptions`). Your VirtualDJ mapping needs to toggle/set these variables from controller buttons for those views to be reachable — they won't appear on their own.
