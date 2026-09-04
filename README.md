@@ -17,4 +17,4 @@ More skins may get added over time. Grab a `.zip` and drop it in your VirtualDJ 
 
 Custom controller mappings for the S8.
 
-- **[Mappings/](Mappings/)** — **butt3rpuppie** mapping, built on the stock `TRAKTORS8` mapper with a scratch-style shift+jog, tempo-nudge encoder, fast browser scrolling, and a few other tweaks. See its README for the full list of differences from the default mapping and install steps.
+- **[Mappings/](Mappings/)** — **butt3rpuppie's** custom mapping, built on the stock `TRAKTORS8` mapper with a scratch-style shift+jog, tempo-nudge encoder, fast browser scrolling, and a few other tweaks. See its README for the full list of differences from the default mapping and install steps.
